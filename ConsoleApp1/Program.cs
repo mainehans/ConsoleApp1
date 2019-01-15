@@ -7,32 +7,29 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             {
-                //use for the string operation choice
+                //lagra val av strängsort
                 int operation = 0;
-                //stock the result of the operation
+                //Lagra val Av operation
                 double result = 0;
 
-                //Ask user first number
+                //fråga användare om första nummret
                 Console.WriteLine("Mata in det första talet :");
                 string stringFirstNumber = Console.ReadLine();
                 double firstNumber = Convert.ToDouble(stringFirstNumber);
 
-                //Ask user second number
+                //fråga användare om andra nummret
                 Console.WriteLine("Mata in det andra talet :");
                 string stringSecondNumber = Console.ReadLine();
                 double secondNumber = Convert.ToDouble(stringSecondNumber);
 
-                //Ask user operation to use
+                //fråger om val av operation
 
-
-
-
-
-                Console.WriteLine("Enter the operation + (addition), - (substraction), * (multiplication), / (division), ^ (exposant) or % (reste) :");
+                                             
+                Console.WriteLine("skriv in funktionen + (addision), - (substraction), * (multiplikation), / (division), ^ (exposant) Eller % (rest) :");
                 string stringOperation = Console.ReadLine();
 
 
-                // Convert string choice to integral
+                // Convertera string string val till integral
                 if (stringOperation == "+" || stringOperation == "addition")
                 {
                     operation = 1;
@@ -58,7 +55,7 @@ namespace ConsoleApp1
                     operation = 6;
                 }
 
-                //Do someting depending on the operation choose
+                //Gör åtgärd av operand på inmatad data
                 switch (operation)
                 {
                     case 1:
@@ -74,7 +71,7 @@ namespace ConsoleApp1
                         break;
                 }
 
-                Console.WriteLine("\nResult of " + firstNumber + " " + stringOperation + " " + secondNumber + " = " + result + ".");
+                Console.WriteLine("\nresultat av " + firstNumber + " " + stringOperation + " " + secondNumber + " = " + result + ".");
                 Console.ReadKey();
             }
         }
