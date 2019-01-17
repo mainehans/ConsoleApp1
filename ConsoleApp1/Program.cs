@@ -1,11 +1,16 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace kalkulator
 {
     class Program
     {
         static void Main(string[] args)
         {
+            var keepAlive = true;
+
+            while(keepAlive)
+
+
             {
                 //lagra val av strängsort
                 int operation = 0;
@@ -29,7 +34,7 @@ namespace ConsoleApp1
                 string stringOperation = Console.ReadLine();
 
 
-                // Convertera string string val till integral
+                // konvertera string string val till integral
                 if (stringOperation == "+" || stringOperation == "addition")
                 {
                     operation = 1;
@@ -72,8 +77,22 @@ namespace ConsoleApp1
                 }
 
                 Console.WriteLine("\nresultat av " + firstNumber + " " + stringOperation + " " + secondNumber + " = " + result + ".");
+                Console.WriteLine("vill du göra en ny uträkning ? Ja tryck enter. avsluta tryck x");
+                //string avsluta = Console.ReadLine();
+                //if (avsluta == "x")
+                //{
+                //    keepAlive = false;
+                //    return;
+
+                //}
+
+                           
+                
                 Console.ReadKey();
+
+
+
             }
         }
     }
-}
+}   
